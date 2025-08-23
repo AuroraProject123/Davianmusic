@@ -288,51 +288,56 @@
             text-shadow: 0 0 8px rgba(255, 94, 158, 0.6);
         }
 
-        /* Enhanced Hamburger Menu - 2 lines that form X */
-        .hamburger {
-            display: none;
-            cursor: pointer;
-            background: none;
-            border: none;
-            width: 40px;
-            height: 40px;
-            position: relative;
-            padding: 40px;
-            z-index: 1001;
-            align-items: center;
-            justify-content: center;
-        }
+        /* Hamburger Button */
+.hamburger {
+  display: none; /* hidden on desktop */
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  z-index: 1001;
+  align-items: center;
+  justify-content: center;
+}
 
-        .hamburger span {
-            display: block;
-            height: 3px;
-            width: 30px;
-            background-color: var(--text-primary);
-            border-radius: 3px;
-            transition: all var(--transition-fast) ease;
-            transform-origin: center;
-            position: absolute;
-        }
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 28px;
+  background-color: var(--text-primary);
+  border-radius: 3px;
+  transition: all var(--transition-fast) ease;
+  transform-origin: center;
+  position: absolute;
+}
 
-        .hamburger span:first-child {
-            transform: translateY(-8px);
-        }
+.hamburger span:first-child {
+  transform: translateY(-8px);
+}
 
-        .hamburger span:last-child {
-            transform: translateY(8px);
-        }
+.hamburger span:last-child {
+  transform: translateY(8px);
+}
 
-        .hamburger.active span:first-child {
-            transform: translateY(0) rotate(45deg);
-        }
+.hamburger.active span:first-child {
+  transform: translateY(0) rotate(45deg);
+}
 
-        .hamburger.active span:last-child {
-            transform: translateY(0) rotate(-45deg);
-        }
+.hamburger.active span:last-child {
+  transform: translateY(0) rotate(-45deg);
+}
 
-        .hamburger:hover span {
-            background-color: var(--accent-primary);
-        }
+.hamburger:hover span {
+  background-color: var(--accent-primary);
+}
+
+/* Only show hamburger on mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
 
         /* Theme Toggle */
         .theme-toggle-container {
