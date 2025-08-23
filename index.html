@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davian | Music Portfolio - PHIl and xenon</title>
+    <meta name="description" content="Explore the diverse sonic landscapes of PHIl and xenon – two distinct artistic expressions from one creative mind.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23ff4d7c%22>D</text></svg>">
+    
+    <!-- Social Media & SEO Meta Tags -->
+    <meta property="og:title" content="Davian | Music Portfolio">
+    <meta property="og:description" content="Explore the diverse sonic landscapes of PHIl and xenon – two distinct artistic expressions from one creative mind.">
+    <meta property="og:url" content="https://auroraproject123.github.io/Davianmusic/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://auroraproject123.github.io/Davianmusic/social-preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Davian Music - PHIl and xenon Artistic Projects">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Davian | Music Portfolio">
+    <meta name="twitter:description" content="Explore the diverse sonic landscapes of PHIl and xenon – two distinct artistic expressions from one creative mind.">
+    <meta name="twitter:image" content="https://auroraproject123.github.io/Davianmusic/social-preview.jpg">
+    
+    <meta name="keywords" content="Davian, PHIl, xenon, electronic music, music producer, Spotify artist, experimental music">
+    <meta name="author" content="Davian">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Apple/iOS Meta Tags -->
+    <meta name="apple-mobile-web-app-title" content="Davian Music">
+    <meta name="application-name" content="Davian Music">
+    <meta name="theme-color" content="#ff4d7c">
+    <meta name="msapplication-TileColor" content="#ff4d7c">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables for Theming */
+        :root {
+            /* Light Theme - Fixed */
+            --bg-primary: #f0f8ff;
+            --bg-secondary: #ffffff;
+            --text-primary: #2d2d5c;
+            --text-secondary: #5c5c8a;
+            --accent-primary: #ff4d7c;
+            --accent-secondary: #4a86e8;
+            --mixed-color: #7a5cad;
+            --card-shadow: 0 8px 30px rgba(120, 37, 181, 0.15);
+            --nav-bg: rgba(255, 255, 255, 0.95);
+            --gradient: linear-gradient(135deg, #ff4d7c 0%, #ff9a5a 100%);
+            --xenon-gradient: linear-gradient(135deg, #4a86e8 0%, #6fc2e8 100%);
+            --card-bg: rgba(255, 255, 255, 0.85);
+            --social-bg: rgba(255, 255, 255, 0.9);
+            --card-border: 1px solid rgba(120, 37, 181, 0.1);
+            --nav-border: 1px solid rgba(120, 37, 181, 0.1);
+            --footer-border: 1px solid rgba(120, 37, 181, 0.1);
+            --embed-bg: #f5f5ff;
+            --description-bg: rgba(255, 255, 255, 0.9);
+            --logo-gradient: linear-gradient(135deg, #ff4d7c 0%, #4a86e8 100%);
+            
+            /* Light mode particle colors - More vibrant */
+            --particle-start: rgba(255, 77, 124, 0.8);
+            --particle-mid: rgba(74, 134, 232, 0.7);
+            --particle-end: rgba(255, 154, 90, 0.8);
+            
+            /* Light mode loader colors */
+            --loader-bg: #f0f8ff;
+            --loader-text: #2d2d5c;
+            --loader-accent: #ff4d7c;
+            --loader-wave: #4a86e8;
+            
+            /* Animation speeds */
+            --transition-fast: 0.3s;
+            --transition-normal: 0.4s;
+            --transition-slow: 0.6s;
+            
+            /* Bounce animation */
+            --bounce-timing: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        /* Dark Theme - Pure black background */
+        [data-theme="dark"] {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --text-primary: #f0f0ff;
+            --text-secondary: #a1a1c2;
+            --accent-primary: #ff5e9e;
+            --accent-secondary: #6ba8ff;
+            --mixed-color: #94799e;
+            --card-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+            --nav-bg: rgba(10, 10, 10, 0.95);
+            --gradient: linear-gradient(135deg, #ff5e9e 0%, #6ba8ff 100%);
+            --xenon-gradient: linear-gradient(135deg, #6ba8ff 0%, #ff5e9e 100%);
+            --card-bg: rgba(20, 20, 20, 0.8);
+            --social-bg: rgba(20, 20, 20, 0.9);
+            --card-border: 1px solid rgba(60, 60, 60, 0.3);
+            --nav-border: 1px solid rgba(60, 60, 60, 0.3);
+            --footer-border: 1px solid rgba(60, 60, 60, 0.3);
+            --embed-bg: #0f0f0f;
+            --description-bg: rgba(20, 20, 20, 0.9);
+            --logo-gradient: linear-gradient(135deg, #ff5e9e 0%, #6ba8ff 100%);
+            
+            /* Dark mode particle colors - More vibrant */
+            --particle-start: rgba(255, 94, 158, 0.8);
+            --particle-mid: rgba(107, 168, 255, 0.7);
+            --particle-end: rgba(255, 154, 90, 0.8);
+            
+            /* Dark mode loader colors */
+            --loader-bg: #000000;
+            --loader-text: #f0f0ff;
+            --loader-accent: #ff5e9e;
+            --loader-wave: #6ba8ff;
+        }
+
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color var(--transition-normal) ease, 
+                        color var(--transition-normal) ease, 
+                        border-color var(--transition-normal) ease,
+                        box-shadow var(--transition-normal) ease,
+                        transform var(--transition-normal) ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+            transition: background-color var(--transition-normal) ease;
+        }
+
+        body.loading {
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Enhanced Particles Container with gradient particles */
+        #particles-container {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0;
+            animation: float 15s infinite linear;
+            filter: blur(2px);
+            will-change: transform, opacity, background;
+            background: radial-gradient(circle at center, var(--particle-start), var(--particle-mid), var(--particle-end));
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) translateX(0) scale(0.5);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 0.9;
+            }
+            90% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-20vh) translateX(20vw) scale(1);
+                opacity: 0;
+            }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--nav-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 15px 0;
+            border-bottom: var(--nav-border);
+            transition: background-color var(--transition-normal) ease, 
+                       border-color var(--transition-normal) ease;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 8px 16px;
+            border-radius: 30px;
+            transition: all var(--transition-fast) ease;
+            background: var(--card-bg);
+            box-shadow: var(--card-shadow);
+            border: var(--card-border);
+        }
+
+        .logo:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(120, 37, 181, 0.2);
+            background: var(--logo-gradient);
+            color: white;
+        }
+
+        .logo span {
+            margin-left: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+            position: relative;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            position: relative;
+            padding: 8px 0;
+            display: inline-block;
+            transition: all var(--transition-fast) ease;
+        }
+
+        .nav-links a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: var(--gradient);
+            transition: width var(--transition-fast) ease;
+            border-radius: 2px;
+        }
+
+        .nav-links a:hover::before {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            transform: translateY(-3px);
+            text-shadow: 0 0 8px rgba(255, 77, 124, 0.4);
+        }
+
+        [data-theme="dark"] .nav-links a:hover {
+            text-shadow: 0 0 8px rgba(255, 94, 158, 0.6);
+        }
+
+        /* Enhanced Hamburger Menu with larger touch target */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            padding: 0;
+            z-index: 1001;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hamburger span {
+            display: block;
+            height: 3px;
+            width: 30px;
+            background-color: var(--text-primary);
+            border-radius: 3px;
+            transition: all var(--transition-fast) ease;
+            transform-origin: center;
+            position: absolute;
+        }
+
+        .hamburger span:first-child {
+            transform: translateY(-8px);
+        }
+
+        .hamburger span:last-child {
+            transform: translateY(8px);
+        }
+
+        .hamburger.active span:first-child {
+            transform: translateY(0) rotate(45deg);
+        }
+
+        .hamburger.active span:last-child {
+            transform: translateY(0) rotate(-45deg);
+        }
+
+        .hamburger:hover span {
+            background-color: var(--accent-primary);
+        }
+
+        /* Theme Toggle - Improved with smooth sliding */
+        .theme-toggle-container {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .theme-toggle {
+            background: var(--bg-secondary);
+            border: 1px solid var(--text-secondary);
+            border-radius: 30px;
+            width: 60px;
+            height: 30px;
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding: 0 5px;
+            transition: all var(--transition-fast) ease;
+            overflow: hidden;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(100, 100, 255, 0.2);
+        }
+
+        [data-theme="dark"] .theme-toggle:hover {
+            box-shadow: 0 0 15px rgba(196, 82, 136, 0.3);
+        }
+
+        .theme-toggle-handle {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: var(--gradient);
+            transition: transform var(--transition-normal) cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: white;
+            left: 4px;
+        }
+
+        [data-theme="dark"] .theme-toggle-handle {
+            transform: translateX(30px);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 150px 0 100px;
+            text-align: center;
+            background-color: var(--bg-primary);
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .hero.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .animated-name {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ff2975 0%, #3b8dff 50%, #ff2975 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shine 3s linear infinite;
+            cursor: pointer;
+            display: inline-block;
+            transition: all var(--transition-fast) ease;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 0 15px rgba(255, 41, 117, 0.5);
+        }
+
+        .animated-name:hover {
+            transform: translateY(-5px) scale(1.05);
+            text-shadow: 0 0 25px rgba(255, 41, 117, 0.8);
+        }
+
+        [data-theme="dark"] .animated-name {
+            background: linear-gradient(135deg, #ff5e9e 0%, #6ba8ff 50%, #ff5e9e 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 15px rgba(255, 94, 158, 0.5);
+        }
+
+        [data-theme="dark"] .animated-name:hover {
+            text-shadow: 0 0 30px rgba(255, 94, 158, 0.8);
+        }
+
+        @keyframes shine {
+            0% {
+                background-position: 0% center;
+            }
+            100% {
+                background-position: 200% center;
+            }
+        }
+
+        .hero p {
+            font-size: 22px;
+            color: var(--mixed-color);
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-weight: 500;
+            transition: color var(--transition-normal) ease;
+        }
+
+        /* Artist Sections */
+        .artist-section {
+            padding: 80px 0;
+            border-top: var(--footer-border);
+            position: relative;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .artist-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .artist-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .artist-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 24px;
+            color: white;
+            transition: transform var(--transition-fast) ease, box-shadow var(--transition-fast) ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        [data-theme="dark"] .artist-icon {
+            box-shadow: 0 0 15px rgba(100, 100, 255, 0.3);
+        }
+
+        .artist-icon:hover {
+            transform: scale(1.05);
+        }
+
+        .phil-icon {
+            background-color: var(--accent-primary);
+        }
+
+        .xenon-icon {
+            background-color: var(--accent-secondary);
+        }
+
+        .artist-title {
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .phil-title {
+            color: var(--accent-primary);
+        }
+
+        .xenon-title {
+            color: var(--accent-secondary);
+            text-transform: lowercase;
+        }
+
+        /* Description Box Styles */
+        .description-box {
+            background-color: var(--description-bg);
+            padding: 25px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            box-shadow: var(--card-shadow);
+            border: var(--card-border);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: transform var(--transition-fast) ease, box-shadow var(--transition-fast) ease;
+        }
+
+        .description-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        [data-theme="dark"] .description-box:hover {
+            box-shadow: 0 10px 30px rgba(100, 80, 255, 0.25);
+        }
+
+        .artist-description {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .phil-description {
+            color: var(--accent-primary);
+        }
+
+        .xenon-description {
+            color: var(--accent-secondary);
+        }
+
+        /* Spotify Embed Styling */
+        .embed-container {
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: var(--card-shadow);
+            border: var(--card-border);
+            transition: transform var(--transition-fast) ease, box-shadow var(--transition-fast) ease;
+            background-color: var(--embed-bg);
+            position: relative;
+        }
+
+        .embed-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        [data-theme="dark"] .embed-container:hover {
+            box-shadow: 0 10px 30px rgba(100, 80, 255, 0.25);
+        }
+
+        .embed-header {
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            color: white;
+            border-radius: 16px 16px 0 0;
+            transition: all var(--transition-fast) ease;
+        }
+
+        .phil .embed-header {
+            background: var(--gradient);
+        }
+
+        .xenon .embed-header {
+            background: var(--xenon-gradient);
+        }
+
+        .embed-header i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .embed-content {
+            padding: 20px;
+        }
+
+        .spotify-embed {
+            border-radius: 12px;
+            overflow: hidden;
+            border: none;
+        }
+
+        /* Social Links */
+        .social-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background-color: var(--social-bg);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            box-shadow: var(--card-shadow);
+            transition: all var(--transition-fast) ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: var(--card-border);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+
+        .social-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            transition: all var(--transition-fast) ease;
+            z-index: -1;
+        }
+
+        .social-link.phil::before {
+            background-color: var(--accent-primary);
+        }
+
+        .social-link.xenon::before {
+            background-color: var(--accent-secondary);
+        }
+
+        .social-link:hover::before,
+        .social-link:active::before,
+        .social-link:focus::before {
+            width: 100%;
+        }
+
+        .social-link:hover,
+        .social-link:active,
+        .social-link:focus {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+            color: white;
+            outline: none;
+        }
+
+        [data-theme="dark"] .social-link {
+            box-shadow: 0 4px 20px rgba(100, 80, 255, 0.2);
+        }
+
+        [data-theme="dark"] .social-link:hover,
+        [data-theme="dark"] .social-link:active,
+        [data-theme="dark"] .social-link:focus {
+            box-shadow: 0 8px 30px rgba(100, 80, 255, 0.3);
+        }
+
+        .social-link i {
+            margin-right: 8px;
+            transition: color var(--transition-fast) ease;
+        }
+
+        .social-link:hover i,
+        .social-link:active i,
+        .social-link:focus i {
+            color: white;
+        }
+
+        .social-link.spotify {
+            background: var(--card-bg);
+        }
+
+        .social-link.instagram {
+            background: var(--card-bg);
+        }
+
+        .social-link.instagram::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+
+        .social-link.instagram:hover::after,
+        .social-link.instagram:active::after,
+        .social-link.instagram:focus::after {
+            left: 100%;
+        }
+
+        /* Mobile touch animation states */
+        @media (hover: none) {
+            .social-link:active {
+                transform: translateY(-3px) scale(0.98);
+            }
+            
+            .social-link:active::before {
+                width: 100%;
+            }
+            
+            .social-link:active i {
+                color: white;
+            }
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0;
+            text-align: center;
+            color: var(--text-secondary);
+            border-top: var(--footer-border);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        footer.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-content p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .email-link {
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all var(--transition-fast) ease;
+            font-size: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 30px;
+            background: var(--card-bg);
+            box-shadow: var(--card-shadow);
+            border: var(--card-border);
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .email-link:hover,
+        .email-link:active,
+        .email-link:focus {
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            background: var(--gradient);
+            outline: none;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-fast) ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover,
+        .back-to-top:active,
+        .back-to-top:focus {
+            transform: translateY(-5px);
+            outline: none;
+        }
+
+        /* Loading Animation - Enhanced with pulsating headphones */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--loader-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, background-color 0.5s ease;
+            overflow: hidden;
+        }
+
+        .loader.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loader-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .loader-logo {
+            font-size: 48px;
+            margin-bottom: 30px;
+            color: var(--loader-accent);
+            text-shadow: 0 0 20px rgba(255, 94, 158, 0.7);
+            animation: pulse-bounce 2s infinite alternate;
+        }
+
+        @keyframes pulse-bounce {
+            0% {
+                transform: scale(1) translateY(0);
+                color: var(--accent-primary);
+            }
+            50% {
+                color: var(--accent-secondary);
+            }
+            100% {
+                transform: scale(1.1) translateY(-10px);
+                color: var(--accent-primary);
+            }
+        }
+
+        .loader-text {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--loader-text);
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.5s ease;
+        }
+
+        .wave-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        .wave {
+            width: 5px;
+            height: 40px;
+            background: linear-gradient(to top, var(--loader-accent), var(--loader-wave));
+            margin: 0 3px;
+            border-radius: 10px;
+            animation: wave 1.2s infinite ease-in-out;
+            transition: background 0.5s ease;
+        }
+
+        .wave:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .wave:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .wave:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+
+        .wave:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes wave {
+            0%, 60%, 100% {
+                transform: scaleY(0.4);
+            }
+            30% {
+                transform: scaleY(1);
+            }
+        }
+
+        .loader-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, var(--loader-bg) 0%, color-mix(in srgb, var(--loader-bg) 70%, #000000) 100%);
+            z-index: -1;
+            transition: background 0.5s ease;
+        }
+
+        /* Enhanced Scroll Animation Styles with Bounce */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px) scale(0.95);
+            transition: opacity 0.8s var(--bounce-timing), transform 0.8s var(--bounce-timing);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .staggered-fade-in > * {
+            opacity: 0;
+            transform: translateY(20px) scale(0.97);
+            transition: opacity 0.6s var(--bounce-timing), transform 0.6s var(--bounce-timing);
+        }
+
+        .staggered-fade-in.visible > * {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .staggered-fade-in.visible > *:nth-child(1) { transition-delay: 0.1s; }
+        .staggered-fade-in.visible > *:nth-child(2) { transition-delay: 0.2s; }
+        .staggered-fade-in.visible > *:nth-child(3) { transition-delay: 0.3s; }
+        .staggered-fade-in.visible > *:nth-child(4) { transition-delay: 0.4s; }
+        .staggered-fade-in.visible > *:nth-child(5) { transition-delay: 0.5s; }
+
+        /* Text fade-in animations */
+        .text-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .text-fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Performance optimizations */
+        .performance-optimized {
+            will-change: transform, opacity;
+        }
+
+        /* Mobile touch improvements */
+        @media (hover: none) {
+            .social-link:active,
+            .logo:active,
+            .email-link:active,
+            .back-to-top:active {
+                transform: scale(0.95) !important;
+                transition: transform 0.1s ease !important;
+            }
+            
+            .artist-icon:active {
+                transform: scale(0.95) !important;
+            }
+            
+            .description-box:active,
+            .embed-container:active {
+                transform: translateY(-2px) !important;
+            }
+            
+            .nav-links a:active {
+                transform: translateY(-1px) !important;
+            }
+            
+            /* Improved touch area for hamburger */
+            .hamburger {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                background-color: var(--bg-secondary);
+                width: 80%;
+                height: 100vh;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: right 0.3s ease;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+                padding: 20px;
+            }
+
+            [data-theme="dark"] .nav-links {
+                box-shadow: -5px 0 15px rgba(100, 80, 255, 0.2);
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links li {
+                margin: 20px 0;
+            }
+
+            .animated-name {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .artist-title {
+                font-size: 28px;
+            }
+            
+            .social-container {
+                flex-direction: column;
+            }
+            
+            .theme-toggle-container {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+            }
+            
+            .embed-header {
+                padding: 12px 15px;
+            }
+            
+            .embed-content {
+                padding: 15px;
+            }
+            
+            .description-box {
+                padding: 20px;
+            }
+            
+            .footer-content p {
+                font-size: 16px;
+            }
+            
+            .email-link {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+            
+            .logo {
+                padding: 6px 12px;
+                font-size: 18px;
+            }
+            
+            .loader-logo {
+                font-size: 36px;
+            }
+            
+            .loader-text {
+                font-size: 16px;
+            }
+            
+            .wave {
+                width: 4px;
+                height: 30px;
+                margin: 0 2px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .loader-logo {
+                font-size: 32px;
+            }
+            
+            .loader-text {
+                font-size: 14px;
+            }
+            
+            .wave {
+                width: 3px;
+                height: 25px;
+                margin: 0 1px;
+            }
+            
+            .artist-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .artist-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .hero {
+                padding: 120px 0 80px;
+            }
+            
+            .artist-section {
+                padding: 60px 0;
+            }
+            
+            /* Better touch target for mobile */
+            .social-link {
+                padding: 16px 28px;
+            }
+        }
+    </style>
+</head>
+<body class="loading">
+    <!-- Particles Background -->
+    <div id="particles-container"></div>
+
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="loader-bg"></div>
+        <div class="loader-content">
+            <div class="loader-logo">
+                <i class="fas fa-headphones-alt"></i>
+            </div>
+            <div class="loader-text">DAVIAN</div>
+            <div class="wave-container">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo" id="main-logo">
+                <i class="fas fa-headphones-alt"></i>
+                <span>Davian</span>
+            </a>
+            <button class="hamburger" aria-label="Menu" id="hamburger-menu">
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#phil">PHIl</a></li>
+                <li><a href="#xenon">xenon</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li class="theme-toggle-container">
+                    <div class="theme-toggle" aria-label="Toggle dark and light mode" role="button" tabindex="0">
+                        <div class="theme-toggle-handle">
+                            <i class="fas fa-adjust"></i>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <h1 class="animated-name text-fade-in" id="main-name">Davian</h1>
+            <p class="text-fade-in">Explore the diverse sonic landscapes of PHIl and xenon – two distinct artistic expressions from one creative mind.</p>
+        </div>
+    </section>
+
+    <!-- PHIl Section -->
+    <section class="artist-section" id="phil">
+        <div class="container staggered-fade-in">
+            <div class="artist-header">
+                <div class="artist-icon phil-icon">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <h2 class="artist-title phil-title text-fade-in">PHIl</h2>
+            </div>
+            
+            <!-- Description Box -->
+            <div class="description-box fade-in">
+                <p class="artist-description phil-description text-fade-in">
+                    PHIl delivers introspective, emotionally-charged music that blends atmospheric electronica with soulful vocals. 
+                    His tracks feature lush soundscapes built around haunting melodies and deeply personal lyrics that explore themes 
+                    of love, loss, and self-discovery. The production showcases sophisticated layering of synthetic and organic elements, 
+                    creating an immersive listening experience that feels both contemporary and timeless.
+                </p>
+            </div>
+            
+            <!-- Custom Spotify Embed -->
+            <div class="embed-container phil fade-in">
+                <div class="embed-header">
+                    <i class="fab fa-spotify"></i>
+                    <h3 class="text-fade-in">PHIl on Spotify</h3>
+                </div>
+                <div class="embed-content">
+                    <div class="spotify-embed">
+                        <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/artist/7kFgcBoiKRo3s2335aEPr2?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="PHIl's Spotify Player"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social-container fade-in">
+                <a href="https://open.spotify.com/artist/7kFgcBoiKRo3s2335aEPr2" class="social-link spotify phil text-fade-in" target="_blank" rel="noopener noreferrer" aria-label="Discover more PHIl on Spotify">
+                    <i class="fab fa-spotify"></i> Discover More PHIl
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Xenon Section -->
+    <section class="artist-section" id="xenon">
+        <div class="container staggered-fade-in">
+            <div class="artist-header">
+                <div class="artist-icon xenon-icon">
+                    <i class="fas fa-sliders-h"></i>
+                </div>
+                <h2 class="artist-title xenon-title text-fade-in">xenon</h2>
+            </div>
+            
+            <!-- Description Box -->
+            <div class="description-box fade-in">
+                <p class="artist-description xenon-description text-fade-in">
+                    xenon explores the experimental edges of electronic music, crafting intricate rhythms and textured sound design 
+                    that pushes boundaries. His work features complex, driving beats layered with glitchy effects and atmospheric synths 
+                    that create a sense of constant evolution and movement. The productions balance industrial grit with melodic moments, 
+                    resulting in a compelling tension between chaos and control that's both cerebral and visceral.
+                </p>
+            </div>
+            
+            <!-- Custom Spotify Embed -->
+            <div class="embed-container xenon fade-in">
+                <div class="embed-header">
+                    <i class="fab fa-spotify"></i>
+                    <h3 class="text-fade-in">xenon on Spotify</h3>
+                </div>
+                <div class="embed-content">
+                    <div class="spotify-embed">
+                        <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/artist/7yB5ovUQz6S6suXbOJGeRF?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="xenon's Spotify Player"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social-container fade-in">
+                <a href="https://open.spotify.com/artist/7yB5ovUQz6S6suXbOJGeRF" class="social-link spotify xenon text-fade-in" target="_blank" rel="noopener noreferrer" aria-label="Discover more xenon on Spotify">
+                    <i class="fab fa-spotify"></i> Discover More xenon
+                </a>
+                <a href="https://www.instagram.com/xexenonnn/?igsh=NTc4MTIwNjQ2YQ%3D%3D" class="social-link instagram xenon text-fade-in" target="_blank" rel="noopener noreferrer" aria-label="Follow xenon on Instagram">
+                    <i class="fab fa-instagram"></i> Follow on Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content fade-in">
+                <p class="text-fade-in">For inquiries, collaborations, or just to say hello:</p>
+                <a href="mailto:contact.davianmusic@gmail.com" class="email-link text-fade-in" aria-label="Email Davian">contact.davianmusic@gmail.com</a>
+                <p class="text-fade-in" style="margin-top: 30px;">© 2025 Davian Music. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Enhanced Loading Animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const loader = document.querySelector('.loader');
+            const body = document.querySelector('body');
+            
+            // Create particles immediately
+            createParticles();
+            
+            // Disable scrolling during loading
+            document.body.style.overflow = 'hidden';
+            
+            // Hide loader after a set time
+            setTimeout(function() {
+                if (loader && body) {
+                    loader.classList.add('hidden');
+                    body.classList.remove('loading');
+                    document.body.style.overflow = '';
+                    initScrollAnimations();
+                }
+            }, 2500);
+        });
+
+        // Create enhanced gradient particles
+        function createParticles() {
+            const container = document.getElementById('particles-container');
+            if (!container) return;
+            
+            // Clear any existing particles
+            container.innerHTML = '';
+            
+            // Reduced particle count for better performance
+            const particleCount = window.innerWidth < 768 ? 25 : 50;
+            const isDark = document.body.getAttribute('data-theme') === 'dark';
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Size between 4 and 8 pixels
+                const size = Math.random() * 4 + 4;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // Random position
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                particle.style.left = `${posX}vw`;
+                particle.style.top = `${posY}vh`;
+                
+                // Random animation duration and delay (faster)
+                const duration = Math.random() * 10 + 15;
+                const delay = Math.random() * 5;
+                particle.style.animationDuration = `${duration}s`;
+                particle.style.animationDelay = `${delay}s`;
+                
+                // Set colors based on theme
+                if (isDark) {
+                    particle.style.background = 'radial-gradient(circle at center, rgba(255, 94, 158, 0.8), rgba(107, 168, 255, 0.7), rgba(255, 154, 90, 0.8))';
+                } else {
+                    particle.style.background = 'radial-gradient(circle at center, rgba(255, 77, 124, 0.8), rgba(74, 134, 232, 0.7), rgba(255, 154, 90, 0.8))';
+                }
+                
+                container.appendChild(particle);
+            }
+        }
+
+        // Initialize scroll animations with bounce effect
+        function initScrollAnimations() {
+            const sections = document.querySelectorAll('.hero, .artist-section, footer');
+            const fadeElements = document.querySelectorAll('.fade-in');
+            const staggeredElements = document.querySelectorAll('.staggered-fade-in');
+            const textElements = document.querySelectorAll('.text-fade-in');
+            
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.05
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        // Only remove the visible class if scrolling up past the element
+                        if (entry.boundingClientRect.top > 0) {
+                            entry.target.classList.remove('visible');
+                        }
+                    }
+                });
+            }, observerOptions);
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+            
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            staggeredElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            textElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Make hero section visible immediately after load
+            document.querySelector('.hero').classList.add('visible');
+        }
+
+        // Update particles on theme change
+        function updateParticles() {
+            createParticles();
+        }
+
+        // Update loader colors on theme change
+        function updateLoaderColors() {
+            const loader = document.querySelector('.loader');
+            const loaderText = document.querySelector('.loader-text');
+            const loaderLogo = document.querySelector('.loader-logo');
+            const waves = document.querySelectorAll('.wave');
+            const isDark = document.body.getAttribute('data-theme') === 'dark';
+            
+            if (loader) {
+                loader.style.backgroundColor = isDark ? '#000000' : '#f0f8ff';
+            }
+            
+            if (loaderText) {
+                loaderText.style.color = isDark ? '#f0f0ff' : '#2d2d5c';
+            }
+            
+            if (loaderLogo) {
+                loaderLogo.style.color = isDark ? '#ff5e9e' : '#ff4d7c';
+                loaderLogo.style.textShadow = isDark ? '0 0 20px rgba(255, 94, 158, 0.7)' : '0 0 20px rgba(255, 77, 124, 0.7)';
+            }
+            
+            waves.forEach(wave => {
+                wave.style.background = isDark 
+                    ? 'linear-gradient(to top, #ff5e9e, #6ba8ff)' 
+                    : 'linear-gradient(to top, #ff4d7c, #4a86e8)';
+            });
+        }
+
+        // Enhanced Hamburger Menu Toggle with larger touch target
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (hamburger && navLinks) {
+            // Fixed hamburger menu toggle - listen for clicks on the entire button
+            hamburger.addEventListener('click', function(e) {
+                e.stopPropagation();
+                this.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (navLinks.classList.contains('active') && 
+                    !e.target.closest('.nav-links') && 
+                    !e.target.closest('.hamburger')) {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+            
+            // Touch events for better mobile handling
+            hamburger.addEventListener('touchstart', function(e) {
+                e.preventDefault();
+                this.style.transform = 'scale(0.95)';
+            });
+            
+            hamburger.addEventListener('touchend', function(e) {
+                e.preventDefault();
+                this.style.transform = '';
+            });
+        }
+
+        // Theme Toggle with localStorage
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+        
+        if (themeToggle) {
+            // Check for saved theme preference or use light mode
+            const savedTheme = localStorage.getItem('theme');
+            
+            if (savedTheme === 'dark') {
+                body.setAttribute('data-theme', 'dark');
+            } else {
+                body.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+            }
+            
+            // Update loader colors based on initial theme
+            updateLoaderColors();
+            
+            // Click event
+            themeToggle.addEventListener('click', function() {
+                const currentTheme = body.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                
+                if (newTheme === 'dark') {
+                    body.setAttribute('data-theme', 'dark');
+                } else {
+                    body.removeAttribute('data-theme');
+                }
+                
+                localStorage.setItem('theme', newTheme);
+                
+                // Update particle colors when theme changes
+                updateParticles();
+                updateLoaderColors();
+            });
+            
+            // Keyboard accessibility
+            themeToggle.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+        }
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                if (navLinks) {
+                    navLinks.classList.remove('active');
+                    hamburger.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        // Enhanced Back to Top Button
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        if (backToTopButton) {
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('visible');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Keyboard accessibility
+            backToTopButton.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+        }
+
+        // Enhanced smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    if (navLinks && navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        hamburger.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                    
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fix for logo getting stuck on mobile
+        const logo = document.getElementById('main-logo');
+        if (logo) {
+            logo.addEventListener('touchstart', function() {
+                this.style.transform = 'scale(0.95)';
+            });
+            
+            logo.addEventListener('touchend', function() {
+                this.style.transform = '';
+            });
+        }
+
+        // Add styles for ripple effect
+        const style = document.createElement('style');
+        style.textContent = `
+            .ripple-effect {
+                position: absolute;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.4);
+                transform: scale(0);
+                animation: ripple 0.6s linear;
+                pointer-events: none;
+            }
+            
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+            
+            /* Improved focus styles for accessibility */
+            .social-link:focus-visible,
+            .email-link:focus-visible,
+            .logo:focus-visible,
+            .back-to-top:focus-visible,
+            .theme-toggle:focus-visible {
+                outline: 2px solid var(--accent-primary);
+                outline-offset: 2px;
+            }
+            
+            /* Prevent blue highlight on touch devices */
+            * {
+                -webkit-tap-highlight-color: transparent;
+            }
+            
+            /* Performance optimizations */
+            .animated-name {
+                will-change: background-position, transform;
+            }
+            
+            .social-link, .logo, .email-link, .back-to-top {
+                will-change: transform, box-shadow, background-color;
+            }
+            
+            /* Reduced motion for users who prefer it */
+            @media (prefers-reduced-motion: reduce) {
+                * {
+                    animation-duration: 0.01ms !important;
+                    animation-iteration-count: 1 !important;
+                    transition-duration: 0.01ms !important;
+                    scroll-behavior: auto !important;
+                }
+                
+                .particle {
+                    animation: none;
+                    opacity: 0;
+                }
+                
+                .animated-name {
+                    animation: none;
+                }
+                
+                .fade-in,
+                .staggered-fade-in > *,
+                .text-fade-in {
+                    transition: none !important;
+                }
+                
+                .hamburger span {
+                    transition: none !important;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Handle resize events for better responsiveness
+        let resizeTimer;
+        window.addEventListener('resize', function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function() {
+                updateParticles();
+            }, 250);
+        });
+
+        // Performance optimization: requestAnimationFrame for animations
+        function animate() {
+            requestAnimationFrame(animate);
+            // Animation code would go here if needed
+        }
+        animate();
+    </script>
+</body>
+</html>
