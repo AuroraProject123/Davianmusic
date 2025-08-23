@@ -1602,16 +1602,15 @@
             });
         }
 
-        // Enhanced Hamburger Menu Toggle (2 lines)
         const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        
-        if (hamburger && navLinks) {
-            // Click event - improved for mobile
-            hamburger.addEventListener('click', function(e) {
-                e.stopPropagation();
-                this.classList.toggle('active');
-                navLinks.classList.toggle('active');
+const navLinks = document.querySelector('.nav-links');
+
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', function () {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+}
                 document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
             });
             
